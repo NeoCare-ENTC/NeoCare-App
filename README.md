@@ -23,8 +23,13 @@ NeoCare-App/
 
 ### 1. Start Backend Server
 ```bash
-# From project root
+# From project root (Windows)
+.\.venv\Scripts\python.exe backend/main.py
+
+# Or activate virtual environment first
+.\.venv\Scripts\Activate.ps1
 python backend/main.py
+
 # Backend runs on: http://localhost:8001
 ```
 
@@ -62,8 +67,13 @@ npm start
 ## 🛠️ Development Commands
 
 ```bash
-# Backend
-pip install fastapi uvicorn numpy
+# Backend (Windows)
+.\.venv\Scripts\pip.exe install fastapi uvicorn numpy python-multipart
+.\.venv\Scripts\python.exe backend/main.py
+
+# Or activate virtual environment
+.\.venv\Scripts\Activate.ps1
+pip install fastapi uvicorn numpy python-multipart
 python backend/main.py
 
 # Frontend  
